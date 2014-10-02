@@ -1,0 +1,22 @@
+{
+	"name": "wpgwinnett/wpgwinnett-theme",
+	"description": "A custom theme wpgwinnett.com",
+	"type": "wordpress-theme",
+	"license": "GPL-3.0+",
+	"authors": [
+	  {
+			"name": "Naomi Bush",
+			"role": "Developer"
+		},
+		{
+			"name": "Hugh Thompson",
+			"role": "Developer"
+		},
+		{
+			"name": "Micah Wood",
+			"email": "micah@wpscholar.com",
+			"homepage": "http://wpscholar.com",
+			"role": "Developer"
+		}
+	]
+}
