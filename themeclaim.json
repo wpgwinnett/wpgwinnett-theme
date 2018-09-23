@@ -1,0 +1,18 @@
+{
+  "from": {
+    "Name": "Mythic",
+    "Description": "Mythic is a next-generation starter theme designed to help theme authors write elegant, intelligent, and modern code.",
+    "Uri": "https://themehybrid.com/themes/mythic",
+    "Author": "Justin Tadlock",
+    "AuthorEmail": "justintadlock@gmail.com",
+    "AuthorUri": "https://themehybrid.com"
+  },
+  "to": {
+    "Name": "WordPress Gwinnett",
+    "Description": "Theme for WordPress Gwinnett meetup chapter, based on Mythic",
+    "Uri": "https://wpgwinnett.com",
+    "Author": "WordPress Gwinnett contributors",
+    "AuthorEmail": "hello@wpgwinnett.com",
+    "AuthorUri": "https://wpgwinnett.com"
+  }
+}

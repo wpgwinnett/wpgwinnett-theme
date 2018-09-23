@@ -1,0 +1,15 @@
+////
+/// Setting imports.
+///
+/// Settings handle the configuration and don't output CSS. This is a good place
+/// to define things like variables.
+///
+/// @group  Settings
+/// @author WordPress Gwinnett contributors <hello@wpgwinnett.com>
+/// @link   https://wpgwinnett.com
+////
+
+@import 'breaks';
+@import 'colors';
+@import 'dimensions';
+@import 'fonts';

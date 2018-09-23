@@ -1,0 +1,28 @@
+////
+/// App header component.
+///
+/// @group  Components
+/// @author WordPress Gwinnett contributors <hello@wpgwinnett.com>
+/// @link   https://wpgwinnett.com
+////
+
+.app-header {
+
+	// Wrapper around the title and description.
+	&__branding {}
+
+	// Output from the `custom-logo` feature.
+	&__logo {}
+
+	// Logo link.
+	&__logo-link {}
+
+	// The site title.
+	&__title {}
+
+	// Site title link.
+	&__title-link {}
+
+	// The site description.
+	&__description {}
+}

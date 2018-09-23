@@ -1,0 +1,24 @@
+////
+/// Gallery (shortcode) component.
+///
+/// @group  Components
+/// @author WordPress Gwinnett contributors <hello@wpgwinnett.com>
+/// @link   https://wpgwinnett.com
+////
+
+.gallery {
+
+	@media ( min-width: break-small() ) {
+
+		@for $i from 1 through 10 {
+
+			&-columns-#{ $i } &-item {}
+		}
+	}
+
+	&-icon {
+		img {}
+	}
+
+	&-caption {}
+}
