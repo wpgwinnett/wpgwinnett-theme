@@ -14,7 +14,7 @@
 	],
 	"autoload"    : {
 		"psr-4" : {
-			"WordpressGwinnett\\" : "app/"
+			"WordPressGwinnett\\" : "app/"
 		}
 	},
         "require": {
