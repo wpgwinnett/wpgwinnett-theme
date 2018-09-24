@@ -1,12 +1,14 @@
 # WordPress Gwinnett theme
 
-The WordPress Gwinnett theme is a starter theme for WordPress.
+[WordPress Gwinnett](https://wpgwinnett.com) is an official WordPress meetup chapter, and this is the theme used to power our website.
 
-The theme's primary goal is to offer a modern development experience for WordPress theme authors while sticking as close to possible to WordPress standards as we can.  Sometimes those things don't always mesh well.  This theme aims to balance that.
+We're using [Mythic](https://github.com/justintadlock/mythic) as a starter, because its
+
+> primary goal is to offer a modern development experience for WordPress theme authors while sticking as close to possible to WordPress standards as we can.
 
 ## Requirements
 
-There's a few requirements in order to develop a new theme or contribute back to the project:
+There are a few requirements for using this theme or contributing:
 
 * PHP 5.6+ (preferably 7+).
 * [Git](https://git-scm.com/) for version control.
@@ -16,12 +18,18 @@ There's a few requirements in order to develop a new theme or contribute back to
 
 You should feel reasonably comfortable using the command line. The theme tries to keep this as simple as possible, but some command line knowledge is necessary in modern development.
 
-## Documentation
+## Installation
 
-Check out the [project wiki](https://github.com/wpgwinnett/wpgwinnett-theme/wiki) to learn how to install and set up the theme.
+1. Fork this repo and clone to your `wp-content/themes` folder
+2. Open the command line utility on your computer, and in the theme folder you just cloned (e.g. `wpgwinnett-theme`), run the following to pull in the dependencies:
+    ```bash
+    > composer install
+    > npm install
+    ```
+3. Activate the theme
 
 ## Copyright and License
 
 The WordPress Gwinnett theme is licensed under the [GNU GPL](https://www.gnu.org/licenses/gpl-2.0.html), version 2 or later.
 
-2018 &copy; WordPress Gwinnett contributors.
+&copy; 2018, WordPress Gwinnett contributors.
