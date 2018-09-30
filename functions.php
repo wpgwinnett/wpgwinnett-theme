@@ -34,3 +34,13 @@ if ( version_compare( $GLOBALS['wp_version'], '4.9.6', '<' ) || version_compare(
 
 require_once( get_parent_theme_file_path( 'app/bootstrap-autoload.php' ) );
 require_once( get_parent_theme_file_path( 'app/bootstrap-app.php'      ) );
+add_action( 'hybrid/templates/register', function( $templates ) {
+
+	$templates->add(
+		'content/events.php',
+		[
+			'label'      => __( 'Events Home' ),
+			'post_types' => [ 'page', 'another_type' ]
+		]
+	);
+} );
