@@ -35,12 +35,35 @@ if ( version_compare( $GLOBALS['wp_version'], '4.9.6', '<' ) || version_compare(
 require_once( get_parent_theme_file_path( 'app/bootstrap-autoload.php' ) );
 require_once( get_parent_theme_file_path( 'app/bootstrap-app.php'      ) );
 add_action( 'hybrid/templates/register', function( $templates ) {
+// this is how you add templates for the Mythic theme 
+// this is not used for the calendar 
 
 	$templates->add(
-		'content/events.php',
+		'content/some_file.php',
 		[
-			'label'      => __( 'Events Home' ),
+			'label'      => __( 'Some Name' ),
 			'post_types' => [ 'page', 'another_type' ]
 		]
 	);
+	
+	
+	
 } );
+function tribe_filter_template_paths ( $file, $template ) {
+ /*  This is the file path for when we go on the server 
+ */
+   $custom_file_path =  ABSPATH . 'wp-content/themes/wpgwinnett-theme/resources/views/content/' . $template;;
+   
+  /*  this is the file path for when you are on your local server */
+ 
+ $custom_file_path =  realpath(dirname(__FILE__)) . "\\resources\\views\\content\\" . $template;
+
+
+    // file doesn't exist in custom path, go with the default option
+    if ( !file_exists($custom_file_path) ) return $file;
+
+    // file exists in custom path, let's use it
+    return $custom_file_path;
+}
+ 
+add_filter( 'tribe_events_template', 'tribe_filter_template_paths', 10, 2 );
