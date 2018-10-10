@@ -2,6 +2,10 @@
 	overflow-x: hidden;
 }
 
+.edit-post-visual-editor .entry__title {
+	text-align: center;
+}
+
 .edit-post-visual-editor .wp-block-audio {
 	margin: 0;
 }

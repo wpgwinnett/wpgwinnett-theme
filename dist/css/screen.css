@@ -2,6 +2,10 @@ body {
 	overflow-x: hidden;
 }
 
+.entry__title {
+	text-align: center;
+}
+
 .wp-block-audio {
 	margin: 0;
 }
