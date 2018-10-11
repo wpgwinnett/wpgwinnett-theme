@@ -1,9 +1,28 @@
 body {
 	overflow-x: hidden;
+	font-family: 'Domine';
 }
 
-.entry__title {
-	text-align: center;
+.app-header__title {
+	text-transform: uppercase;
+}
+
+#menu__wpg-main ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+	margin-top: 3vh;
+}
+
+#menu__wpg-main li {
+	display: inline;
+	padding: 3px 10px;
+	border: 1px solid #000000;
+}
+
+#menu__wpg-main li a {
+	text-decoration: none;
 }
 
 .wp-block-audio {

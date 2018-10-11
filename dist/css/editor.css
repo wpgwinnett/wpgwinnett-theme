@@ -1,9 +1,6 @@
 .edit-post-visual-editor body {
 	overflow-x: hidden;
-}
-
-.edit-post-visual-editor .entry__title {
-	text-align: center;
+	font-family: 'Domine';
 }
 
 .edit-post-visual-editor .wp-block-audio {

@@ -1,6 +1,6 @@
 <?php if ( has_nav_menu( $data->location ) ) : ?>
 
-	<nav <?php Hybrid\Attr\display( 'menu', $data->location ) ?>>
+	<nav id="menu__wpg-main" <?php Hybrid\Attr\display( 'menu', $data->location ) ?>>
 
 		<h3 class="menu__title screen-reader-text">
 			<?php Hybrid\Menu\display_name( $data->location ) ?>

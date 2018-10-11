@@ -18,11 +18,16 @@
 	&__logo-link {}
 
 	// The site title.
-	&__title {}
+	&__title {
+		text-transform:uppercase;
+	}
 
 	// Site title link.
 	&__title-link {}
 
 	// The site description.
 	&__description {}
+	
+	
 }
+

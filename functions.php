@@ -49,6 +49,15 @@ add_action( 'hybrid/templates/register', function( $templates ) {
 	
 	
 } );
+
+/*  tribe_filter_template_paths 
+ *
+ *
+ *  Tells the tribe calendar where to look for the template we want to use 
+ *
+ *  If you use this on your local machine, you have to alter the custom path
+ *
+ */
 function tribe_filter_template_paths ( $file, $template ) {
  /*  This is the file path for when we go on the server 
  */
@@ -67,3 +76,41 @@ function tribe_filter_template_paths ( $file, $template ) {
 }
  
 add_filter( 'tribe_events_template', 'tribe_filter_template_paths', 10, 2 );
+
+
+/* tribeEventsTitle 
+ *
+ *  Displays the word "Calendar" on the Tribe Events calendar page 
+ * 
+ *  otherwise it would display the title of the first event 
+ *
+ */
+ 
+ 
+function tribeEventsTitle( $html ){
+	
+   global $post;
+
+   if ($post->post_type === "tribe_events") {
+      $title = "<h1 class='entry__title'>Calendar</h1>";
+
+   }else return $html;
+
+   return $title;
+}
+add_filter('hybrid/post/title', 'tribeEventsTitle');
+
+/*  allow us to upload svg file types. 
+ *  we may have to remove this if we don't use an svg file for the logo 
+ */
+ 
+function add_file_types_to_uploads($file_types){
+$new_filetypes = array();
+$new_filetypes['svg'] = 'image/svg+xml';
+$file_types = array_merge($file_types, $new_filetypes );
+return $file_types;
+}
+add_action('upload_mimes', 'add_file_types_to_uploads');
+
+
+add_action('init', 'add_theme_mods');

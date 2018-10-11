@@ -20,7 +20,11 @@
 		</div>
 
 		<?php the_custom_header_markup() ?>
-
+		
+		
+		<div class="app-header__title">
+			<?php Hybrid\Post\display_title() ?>
+		</div>
 		<?php Hybrid\View\display( 'nav/menu', 'primary', [ 'location' => 'primary' ] ) ?>
 
 	</header>
