@@ -3,11 +3,66 @@ body {
 	font-family: 'Domine';
 }
 
+.app-header {
+	grid-area: header;
+}
+
+.app-main {
+	grid-area: content;
+}
+
+.app-footer {
+	grid-area: footer;
+}
+
+.app {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 100%;
+	grid-template-areas: "header" "content" "footer";
+}
+
+.wp-custom-header {
+	grid-area: logo;
+}
+
+#menu__wpg-main {
+	grid-area: menu;
+}
+
+.app-header {
+	background-color: #c62641;
+	left: 0;
+	top: 0;
+	position: fixed;
+	height: 150px;
+	width: 100%;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 100%;
+	grid-template-columns: repeat(8, 100px);
+}
+
 .app-header__title {
 	text-transform: uppercase;
 }
 
+.app-main {
+	grid-area: content;
+	top: -99px;
+	margin: 0 auto 10rem;
+	padding: 16rem 0 15rem;
+	width: 95%;
+	max-width: 1170px;
+	z-index: 900;
+}
+
+.wp-custom-header {
+	grid-column: 2 / 4;
+}
+
 #menu__wpg-main ul {
+	grid-column: 5 / 7;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -18,10 +73,11 @@ body {
 #menu__wpg-main li {
 	display: inline;
 	padding: 3px 10px;
-	border: 1px solid #000000;
+	border: 1px solid #ffffff;
 }
 
 #menu__wpg-main li a {
+	color: #ffffff;
 	text-decoration: none;
 }
 

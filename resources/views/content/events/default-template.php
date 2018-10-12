@@ -1,6 +1,7 @@
+<?php Hybrid\View\display( 'header', Hybrid\Template\hierarchy() ) ?>
+
 <div class="app-content">
 	
-<?php Hybrid\View\display( 'header', Hybrid\Template\hierarchy() ) ?>
 
 
 
