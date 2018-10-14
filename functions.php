@@ -39,9 +39,9 @@ add_action( 'hybrid/templates/register', function( $templates ) {
 // this is not used for the calendar 
 
 	$templates->add(
-		'content/some_file.php',
+		'content/events/events-calendar.php',
 		[
-			'label'      => __( 'Some Name' ),
+			'label'      => __( 'Events Calendar' ),
 			'post_types' => [ 'page', 'another_type' ]
 		]
 	);
