@@ -15,12 +15,13 @@
 
 		<div class="app-header__branding">
 			<?php the_custom_logo() ?>
-			<?php Hybrid\Site\display_title() ?>
-			<?php Hybrid\Site\display_description() ?>
+			
 		</div>
 
 		<?php the_custom_header_markup() ?>
-
+		
+		
+		
 		<?php Hybrid\View\display( 'nav/menu', 'primary', [ 'location' => 'primary' ] ) ?>
 
 	</header>

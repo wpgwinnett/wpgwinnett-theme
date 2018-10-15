@@ -7,7 +7,17 @@
 /// @author WordPress Gwinnett contributors <hello@wpgwinnett.com>
 /// @link   https://wpgwinnett.com
 ////
-
+	.app-header {grid-area: header};
+	.app-main {grid-area:content;}
+	.app-footer { grid-area: footer; }
 .app {
+	display: grid;
 
+		 
+		grid-template-rows:auto ;
+		grid-template-columns:100%;
+        grid-template-areas: 
+		"header"
+		"content"
+		"footer";
 }

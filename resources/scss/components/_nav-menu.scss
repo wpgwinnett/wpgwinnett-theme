@@ -22,4 +22,25 @@
 
 	// Item link.
 	&__link {}
+	
+
+}
+#menu__wpg-main  ul {
+	 grid-column:5 / 7;
+	margin: 0; padding: 0; 
+	list-style-type: none; 
+	list-style-image: none; 
+	margin-top:3vh;
+	
+}
+
+#menu__wpg-main li{
+ display: inline;
+ padding:3px 10px;
+ border:1px solid #ffffff;
+}
+
+#menu__wpg-main li a{
+	color:#ffffff;
+	text-decoration:none;
 }
