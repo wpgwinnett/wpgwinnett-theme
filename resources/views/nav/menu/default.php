@@ -1,6 +1,17 @@
 <?php if ( has_nav_menu( $data->location ) ) : ?>
 
-	<nav id="menu__wpg-main" <?php Hybrid\Attr\display( 'menu', $data->location ) ?>>
+	<?php 
+	error_log('data location ' . $data->location); 
+	switch ($data->location ){
+		case 'primary':
+		  $id = 'menu__wpg-main';
+		  break;
+		 case 'footer':
+		    $id = 'menu__wpg-footer';
+			break;
+	}
+?>
+	<nav id="<?php echo $id ?>" <?php Hybrid\Attr\display( 'menu', $data->location ) ?>>
 
 		<h3 class="menu__title screen-reader-text">
 			<?php Hybrid\Menu\display_name( $data->location ) ?>

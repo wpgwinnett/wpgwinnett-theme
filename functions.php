@@ -42,7 +42,7 @@ add_action( 'hybrid/templates/register', function( $templates ) {
 		'content/events/events-calendar.php',
 		[
 			'label'      => __( 'Events Calendar' ),
-			'post_types' => [ 'page', 'another_type' ]
+			'post_types' => [ 'page', 'another type' ]
 		]
 	);
 	
@@ -113,4 +113,3 @@ return $file_types;
 add_action('upload_mimes', 'add_file_types_to_uploads');
 
 
-add_action('init', 'add_theme_mods');
