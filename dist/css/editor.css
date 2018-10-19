@@ -1,6 +1,7 @@
 .edit-post-visual-editor body {
 	overflow-x: hidden;
 	font-family: 'Domine';
+	background-color: #f8f8f8;
 }
 
 .edit-post-visual-editor .wp-block-audio {

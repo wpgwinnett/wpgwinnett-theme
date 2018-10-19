@@ -18,8 +18,7 @@
 	width:100%;
 	display:grid;
 	grid-template-rows:auto ;
-		grid-template-columns:100%;
-		  grid-template-columns: repeat(8, 100px);
+	 grid-template-columns: repeat(8, 100px);
 
 	// Wrapper around the title and description.
 	&__branding {}
