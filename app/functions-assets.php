@@ -40,6 +40,9 @@ add_action( 'wp_enqueue_scripts', function() {
 
 	// Enqueue theme styles.
 	wp_enqueue_style( 'wordpress-gwinnett-screen', asset( 'css/screen.css' ), null, null );
+	
+	wp_enqueue_style( 'wordpress-gwinnett-google-fonts', 'https://fonts.googleapis.com/css?family=Domine:300,400,500,600,700', false );
+	wp_enqueue_style( 'wordpress-gwinnett-google-fonts1', 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700', false );
 
 } );
 

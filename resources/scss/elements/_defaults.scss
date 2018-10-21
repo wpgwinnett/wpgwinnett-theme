@@ -12,5 +12,21 @@ body {
 	overflow-x: hidden;
 	font-family:'Domine';
 	background-color:#f8f8f8;
+	font-size: 1.6em;
+	line-height: 1.88;
+}
+h1,h2,h3,h4,h5,h6{
+  text-transform:uppercase;
+  font-family: 'Josefin Sans';
+    font-weight: 600;
+}
+h1, .h1 {
+    font-size: 4.8rem;
+	margin: .67em 0;
+}
+p {
+
+    margin: 0 0 3.6rem;
 	
+
 }

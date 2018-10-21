@@ -2,6 +2,23 @@ body {
 	overflow-x: hidden;
 	font-family: 'Domine';
 	background-color: #f8f8f8;
+	font-size: 1.6em;
+	line-height: 1.88;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-family: 'Josefin Sans';
+	font-weight: 600;
+}
+
+h1, .h1 {
+	font-size: 4.8rem;
+	margin: .67em 0;
+}
+
+p {
+	margin: 0 0 3.6rem;
 }
 
 .app-header {
@@ -49,12 +66,6 @@ body {
 
 .app-main {
 	grid-area: content;
-	top: -99px;
-	margin: 0 auto 10rem;
-	padding: 16rem 0 15rem;
-	width: 95%;
-	max-width: 1170px;
-	z-index: 900;
 }
 
 #menu__wpg-footer {
@@ -65,6 +76,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 400;
 }
 
 .app-footer__wp-custom-logo {
@@ -79,10 +92,39 @@ body {
 	grid-row-end: 6;
 }
 
+.entry__header {
+	padding-top: 5em;
+}
+
+.entry__centered {
+	text-align: center;
+}
+
+.entry__block-centered {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.entry__wrapper {
+	background-color: #ffffff;
+	padding-bottom: 5em;
+	width: 95%;
+	box-shadow: 0 30px 50px 0 rgba(1, 1, 1, 0.15);
+	max-width: 1170px;
+	margin: 0 auto 10rem;
+	margin-bottom: 10rem;
+	padding: 16rem 0 15rem;
+}
+
+.entry__content {
+	margin: 0 auto 12rem;
+	max-width: 720px;
+}
+
 #menu__wpg-main {
 	padding-top: 1em;
 	grid-column-start: 6;
-	grid-column-end: 8;
+	grid-column-end: 10;
 	grid-row-start: 4;
 	grid-row-end: auto;
 }
@@ -98,12 +140,14 @@ body {
 #menu__wpg-main li {
 	display: inline;
 	padding: 3px 10px;
-	border: 1px solid #ffffff;
 }
 
 #menu__wpg-main li a {
 	color: #ffffff;
 	text-decoration: none;
+	font-size: 1.1rem;
+	font-family: 'Josefin Sans';
+	line-height: 1;
 }
 
 /*  footer */
@@ -121,6 +165,9 @@ body {
 
 #menu__wpg-footer li a {
 	color: #000000;
+	font-size: 1.1rem;
+	font-family: 'Josefin Sans';
+	line-height: 1;
 }
 
 #menu__wpg-footer li::after {

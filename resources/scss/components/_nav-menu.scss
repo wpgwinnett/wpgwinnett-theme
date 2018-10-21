@@ -28,7 +28,7 @@
 #menu__wpg-main {
    padding-top:1em;
 	grid-column-start: 6; 
-  grid-column-end: 8; 
+  grid-column-end: 10; 
   grid-row-start:4; 
   grid-row-end: auto; 
 
@@ -45,12 +45,15 @@
 #menu__wpg-main li{
  display: inline;
  padding:3px 10px;
- border:1px solid #ffffff;
+
 }
 
 #menu__wpg-main li a{
 	color:#ffffff;
 	text-decoration:none;
+	font-size: 1.1rem;
+		font-family: 'Josefin Sans';
+		line-height:1;
 }
 
 /*  footer */
@@ -73,6 +76,9 @@
 
 #menu__wpg-footer li a{
 	color:#000000;
+	font-size: 1.1rem;
+	font-family: 'Josefin Sans';
+	line-height:1;
 
 }
 #menu__wpg-footer li::after {

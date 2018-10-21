@@ -1,25 +1,14 @@
 {
     "/js/app.js": "/js/app.js?id=39eec45549bbbdacfa8b",
-    "/css/screen.css": "/css/screen.css?id=6d3a06186de3a69d38ff",
-    "/css/editor.css": "/css/editor.css?id=d7fc7de58068c51b9551",
+    "/css/screen.css": "/css/screen.css?id=b956aec88060cde6faf3",
+    "/css/editor.css": "/css/editor.css?id=e63992c3b540d333fc8e",
     "/css/customize-controls.css": "/css/customize-controls.css?id=d74b1e8c2959e859334f",
-<<<<<<< HEAD
-    "/js/app.js.map": "/js/app.js.map?id=fbf1d32a88f6e83ad2a6",
-    "/css/screen.css.map": "/css/screen.css.map?id=572fb54c7e8736dc278e",
-    "/css/editor.css.map": "/css/editor.css.map?id=65b4adb03b8304e7fe92",
+    "/js/app.js.map": "/js/app.js.map?id=5de4023608ac7a7d2841",
+    "/css/screen.css.map": "/css/screen.css.map?id=5f554dde0386f0725818",
+    "/css/editor.css.map": "/css/editor.css.map?id=7c18118322bf92a6e6cc",
     "/css/customize-controls.css.map": "/css/customize-controls.css.map?id=087ad168216892d54c38",
     "/js/customize-preview.js": "/js/customize-preview.js?id=8f444310c20c024d59e7",
-    "/js/customize-preview.js.map": "/js/customize-preview.js.map?id=ea7f19dc326947c83967",
+    "/js/customize-preview.js.map": "/js/customize-preview.js.map?id=e1bc143256d801bb90c8",
     "/js/customize-controls.js": "/js/customize-controls.js?id=49cdf7d318fb71d57ca9",
-    "/js/customize-controls.js.map": "/js/customize-controls.js.map?id=0b93c0df58fd44973d89"
-=======
-    "/js/app.js.map": "/js/app.js.map?id=248bbcf197a2ad6251db",
-    "/css/screen.css.map": "/css/screen.css.map?id=4f11400cfb9cf3b4568c",
-    "/css/editor.css.map": "/css/editor.css.map?id=bbb30903d768d2111353",
-    "/css/customize-controls.css.map": "/css/customize-controls.css.map?id=087ad168216892d54c38",
-    "/js/customize-preview.js": "/js/customize-preview.js?id=8f444310c20c024d59e7",
-    "/js/customize-preview.js.map": "/js/customize-preview.js.map?id=9c1b92ec6cb57862b9a5",
-    "/js/customize-controls.js": "/js/customize-controls.js?id=49cdf7d318fb71d57ca9",
-    "/js/customize-controls.js.map": "/js/customize-controls.js.map?id=128c79f44c45eddc749a"
->>>>>>> develop
+    "/js/customize-controls.js.map": "/js/customize-controls.js.map?id=0c6ac745b9b88a95e2e5"
 }

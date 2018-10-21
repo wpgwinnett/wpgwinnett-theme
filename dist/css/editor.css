@@ -2,6 +2,23 @@
 	overflow-x: hidden;
 	font-family: 'Domine';
 	background-color: #f8f8f8;
+	font-size: 1.6em;
+	line-height: 1.88;
+}
+
+.edit-post-visual-editor h1, .edit-post-visual-editor h2, .edit-post-visual-editor h3, .edit-post-visual-editor h4, .edit-post-visual-editor h5, .edit-post-visual-editor h6 {
+	text-transform: uppercase;
+	font-family: 'Josefin Sans';
+	font-weight: 600;
+}
+
+.edit-post-visual-editor h1, .edit-post-visual-editor .h1 {
+	font-size: 4.8rem;
+	margin: .67em 0;
+}
+
+.edit-post-visual-editor p {
+	margin: 0 0 3.6rem;
 }
 
 .edit-post-visual-editor .wp-block-audio {
