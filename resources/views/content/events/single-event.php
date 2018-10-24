@@ -1,22 +1,3 @@
-<div>
-	<h1>Welcome to Mythic's views/content/events/event-single.php</h1>
-</div>
-
-<?php
-/**
- * Day View Title Template
- * The title template for the day view of events.
- *
- * Override this template in your own theme by creating a file at [your-theme]/tribe-events/day/title-bar.php
- *
- * @package TribeEventsCalendar
- * @version 4.6.19
- * @since   4.6.19
- *
- */
-?>
-
-<!--========VIEWS/SINGLE-EVENT.PHP==========-->
 <?php
 /**
  * Single Event Template
@@ -51,8 +32,9 @@ $event_id = get_the_ID();
 	<?php tribe_the_notices() ?>
 
 	<?php the_title( '<h1 class="tribe-events-single-event-title">', '</h1>' ); ?>
-
+	<div>TESTING 1234567890</div>
 	<div class="tribe-events-schedule tribe-clearfix">
+		
 		<?php echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
 		<?php if ( tribe_get_cost() ) : ?>
 			<span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>

@@ -39,7 +39,7 @@ require_once( get_parent_theme_file_path( 'app/bootstrap-app.php'      ) );
 add_action( 'hybrid/templates/register', function( $templates ) {
 
 	$templates->add(
-		'/content/events/event-single.php',
+		'/content/events/single-event.php',
 		[
 			'label'      => __( 'Single Event' ),
 			'post_types' => [ 'page', 'another_type' ]
