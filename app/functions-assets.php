@@ -91,3 +91,4 @@ function asset( $path ) {
 
 	return get_theme_file_uri( 'dist' . $path );
 }
+

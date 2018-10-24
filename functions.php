@@ -34,3 +34,47 @@ if ( version_compare( $GLOBALS['wp_version'], '4.9.6', '<' ) || version_compare(
 
 require_once( get_parent_theme_file_path( 'app/bootstrap-autoload.php' ) );
 require_once( get_parent_theme_file_path( 'app/bootstrap-app.php'      ) );
+
+// Register the single event page
+add_action( 'hybrid/templates/register', function( $templates ) {
+
+	$templates->add(
+		'/content/events/event-single.php',
+		[
+			'label'      => __( 'Single Event' ),
+			'post_types' => [ 'page', 'another_type' ]
+		]
+	);
+});
+
+// function tribe_filter_template_paths ( $file, $template ) {
+// 	/*  This is the file path for when we go on the server 
+// 	*/
+// 		$custom_file_path =  ABSPATH . 'wp-content/themes/wpgwinnett-theme/resources/views/content/events/' . $template;;
+		
+// 	 /*  this is the file path for when you are on your local server */
+	
+// 	$custom_file_path =  realpath(dirname(__FILE__)) . "\\resources\\views\\content\\events\\" . $template;
+// 		 // file doesn't exist in custom path, go with the default option
+// 		 if ( !file_exists($custom_file_path) ) return $file;
+// 		 // file exists in custom path, let's use it
+// 		 return $custom_file_path;
+//  }
+	
+//  add_filter( 'tribe_events_template', 'tribe_filter_template_paths', 10, 2 );
+
+
+
+// function test_action_function() {
+// 	echo "Ilene's Code:";
+// 	echo "<br>";
+// 	echo "<h3>file path for when we go on the server</h3><br>";
+// 	$custom_file_path =  ABSPATH . 'wp-content/themes/wpgwinnett-theme/resources/views/content/events/' . $template;;
+// 	echo $custom_file_path;
+
+// 	echo "<h3>file path for when you are on your local server</h3><br>";
+// 	$custom_file_path =  realpath(dirname(__FILE__)) . "\\resources\\views\\content\\events\\" . $template;
+// 	echo $custom_file_path;
+
+// }
+// add_action( 'test_action', 'test_action_function' );

@@ -1,4 +1,5 @@
 <div class="app-content">
+<h2>Hi from views/content/index.php</h2>
 
 	<main id="main" class="app-main">
 
@@ -15,6 +16,7 @@
 			<?php Hybrid\View\display( 'nav/pagination', 'posts' ) ?>
 
 		<?php endif ?>
+		
 
 	</main>
 
