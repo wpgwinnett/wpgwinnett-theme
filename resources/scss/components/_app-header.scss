@@ -5,20 +5,8 @@
 /// @author WordPress Gwinnett contributors <hello@wpgwinnett.com>
 /// @link   https://wpgwinnett.com
 ////
-.wp-custom-header {grid-area:logo;}
-#menu__wpg-main {grid-area:menu;}
 
 .app-header {
-	
-	background-color:#c62641;
-	left:0;
-	top:0;
-	position:fixed;
-	height:150px;
-	width:100%;
-	display:grid;
-	grid-template-rows:auto ;
-	 grid-template-columns: repeat(8, 100px);
 
 	// Wrapper around the title and description.
 	&__branding {}
@@ -30,16 +18,11 @@
 	&__logo-link {}
 
 	// The site title.
-	&__title {
-		text-transform:uppercase;
-	}
+	&__title {}
 
 	// Site title link.
 	&__title-link {}
 
 	// The site description.
 	&__description {}
-	
-	
 }
-

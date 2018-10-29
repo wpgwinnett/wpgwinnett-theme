@@ -5,21 +5,8 @@
 /// @author WordPress Gwinnett contributors <hello@wpgwinnett.com>
 /// @link   https://wpgwinnett.com
 ////
-#menu__wpg-footer {grid-area:menu-footer;}
-.app-footer {
-	&__container {
-		display:flex;
-		 flex-direction: column;
-		 text-align:center;
-	}
-	&__credit {}
-	
-	&__wp-custom-logo {
-	
-		height: 60px;
-		margin-bottom:1em;
 
-		
-	}
-	
+.app-footer {
+
+	&__credit {}
 }
