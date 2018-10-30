@@ -45,6 +45,13 @@
 	
 }
 /* header menu */
+
+#menu__wpg-main {
+   padding-top:1em;
+	grid-column-start: 6; 
+  grid-column-end: 10; 
+}
+
 #menu__wpg-main  ul {
 	 grid-column:5 / 7;
 	margin: 0; padding: 0; 
@@ -57,10 +64,12 @@
 #menu__wpg-main li{
  display: inline;
  padding:3px 10px;
- border:1px solid #ffffff;
+ 
 }
 
 #menu__wpg-main li a{
 	color:#ffffff;
 	text-decoration:none;
+	font-size: 1.1rem;
+	line-height:1;
 }
