@@ -63,18 +63,3 @@ function tribe_filter_template_paths ( $file, $template ) {
 // tribe_events_template hook is in plugins/the-events-calendar/src/Tribe/Templates.php	
  add_filter( 'tribe_events_template', 'tribe_filter_template_paths', 10, 2 );
 
-
-
-// function test_action_function() {
-// 	echo "Ilene's Code:";
-// 	echo "<br>";
-// 	echo "<h3>file path for when we go on the server</h3><br>";
-// 	$custom_file_path =  ABSPATH . 'wp-content/themes/wpgwinnett-theme/resources/views/content/events/' . $template;;
-// 	echo $custom_file_path;
-
-// 	echo "<h3>file path for when you are on your local server</h3><br>";
-// 	$custom_file_path =  realpath(dirname(__FILE__)) . "\\resources\\views\\content\\events\\" . $template;
-// 	echo $custom_file_path;
-
-// }
-// add_action( 'test_action', 'test_action_function' );
