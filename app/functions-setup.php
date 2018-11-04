@@ -252,4 +252,3 @@ add_action( 'widgets_init', function() {
 	] + $args );
 
 }, 5 );
-
