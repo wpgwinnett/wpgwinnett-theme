@@ -54,7 +54,7 @@ function tribe_filter_template_paths ( $file, $template ) {
 		
 	 /*  this is the file path for when you are on your local server */
 	
-	$custom_file_path =  realpath(dirname(__FILE__)) . "\\resources\\views\\content\\events\\" . $template;
+	$custom_file_path =  get_template_directory() . "\\resources\\views\\content\\events\\" . $template;
 		 // file doesn't exist in custom path, go with the default option
 		 if ( !file_exists($custom_file_path) ) return $file;
 		 // file exists in custom path, let's use it
