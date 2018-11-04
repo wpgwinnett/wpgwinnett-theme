@@ -50,7 +50,7 @@ add_action( 'hybrid/templates/register', function( $templates ) {
 function tribe_filter_template_paths ( $file, $template ) {
 	/*  This is the file path for when we go on the server 
 	*/
-		$custom_file_path =  ABSPATH . 'wp-content/themes/wpgwinnett-theme/resources/views/content/events/' . $template;
+		$custom_file_path = get_template_directory() . '/resources/views/content/events/' . $template;
 		
 	 /*  this is the file path for when you are on your local server */
 	
