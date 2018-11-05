@@ -34,3 +34,19 @@ if ( version_compare( $GLOBALS['wp_version'], '4.9.6', '<' ) || version_compare(
 
 require_once( get_parent_theme_file_path( 'app/bootstrap-autoload.php' ) );
 require_once( get_parent_theme_file_path( 'app/bootstrap-app.php'      ) );
+
+
+add_action( 'hybrid/templates/register', function( $templates ) {
+// this is how you add templates for the Mythic theme 
+// this is not used for the calendar 
+	$templates->add(
+		'content/events/events-home.php',
+		[
+			'label'      => __( 'Events Home' ),
+			'post_types' => [ 'page', 'another type' ]
+		]
+	);
+	
+	
+	
+} );
