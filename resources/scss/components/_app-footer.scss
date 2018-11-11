@@ -6,7 +6,51 @@
 /// @link   https://wpgwinnett.com
 ////
 
+#menu__wpg-footer {grid-area:menu-footer;}
 .app-footer {
-
+	&__container {
+		display:flex;
+		 flex-direction: column;
+		 text-align:center;
+	}
 	&__credit {}
+	
+	&__wp-custom-logo {
+	
+		height: 60px;
+		margin-bottom:1em;
+
+		
+	}
+	
+}
+/* menu for the footer */
+/*  footer */
+
+
+#menu__wpg-footer  ul {
+	
+	margin: 0; padding: 0; 
+	list-style-type: none; 
+	list-style-image: none; 
+
+	
+}
+
+#menu__wpg-footer  li{
+ display: inline;
+ padding:0 3px;
+
+}
+
+#menu__wpg-footer li a{
+	color:#000000;
+
+}
+#menu__wpg-footer li::after {
+  content:' |';
+
+ }
+#menu__wpg-footer li:last-child::after{
+  content:'';
 }
