@@ -17,9 +17,10 @@
 				</p>
 			</div>
 		
-<?php 
+
 	
-		
+	<div class="entry__body">
+<?php
 		$terms = get_terms( array(
     'taxonomy' => 'tribe_events_cat',
     'hide_empty' => false,
@@ -41,9 +42,10 @@
 			
 			
 		}
-	   
+		
 ?>
-	 </div>
+	</div>
+ </div>
 </div>
 </main>
 
