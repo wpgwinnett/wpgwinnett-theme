@@ -6,7 +6,21 @@
 /// @link   https://wpgwinnett.com
 ////
 
+.wp-custom-header {grid-area:logo;}
+#menu__wpg-main {grid-area:menu;}
+
 .app-header {
+	
+	background-color:#c62641;
+	left:0;
+	top:0;
+	position:fixed;
+	height:150px;
+	width:100%;
+	display:grid;
+	grid-template-rows:auto ;
+		grid-template-columns:100%;
+		  grid-template-columns: repeat(8, 100px);
 
 	// Wrapper around the title and description.
 	&__branding {}
@@ -18,11 +32,44 @@
 	&__logo-link {}
 
 	// The site title.
-	&__title {}
+	&__title {
+		text-transform:uppercase;
+	}
 
 	// Site title link.
 	&__title-link {}
 
 	// The site description.
 	&__description {}
+	
+	
+}
+/* header menu */
+
+#menu__wpg-main {
+   padding-top:1em;
+	grid-column-start: 6; 
+  grid-column-end: 10; 
+}
+
+#menu__wpg-main  ul {
+	 grid-column:5 / 7;
+	margin: 0; padding: 0; 
+	list-style-type: none; 
+	list-style-image: none; 
+	margin-top:3vh;
+	
+}
+
+#menu__wpg-main li{
+ display: inline;
+ padding:3px 10px;
+ 
+}
+
+#menu__wpg-main li a{
+	color:#ffffff;
+	text-decoration:none;
+	font-size: 1.1rem;
+	line-height:1;
 }
