@@ -23,11 +23,13 @@
 	&__header {}
 
 	// Entry title.
-	&__title {}
-	
-	// Entry centered 
-	&__centered{
-	    text-align: center;
+
+	&__title {
+		font-size:6.4rem;
+		word-wrap: breakword;
+		color:#333333;
+	}
+
 
 	}
 	
@@ -38,6 +40,7 @@
 	   width:40%;
 	 }
 
+	 }
 	// Full entry content.
 	&__content {}
 	

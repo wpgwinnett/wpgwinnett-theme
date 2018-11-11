@@ -5,10 +5,43 @@
 /// @author WordPress Gwinnett contributors <hello@wpgwinnett.com>
 /// @link   https://wpgwinnett.com
 ////
-
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
 // Body styles. Note that we're hiding horizontal overflow so that wide images
 // don't overflow.
 body {
 	overflow-x: hidden;
 	font-family:'Domine';
+	font-weight:400;
+	font-size: 1.6em;
+	color:#444444;
+	line-height:1.88;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+	font-family:'Josefin Sans';
+	font-weight:600;
+	text-transform: uppercase;
+}
+h1{
+ margin: .67em 0;
+ font-size:4.8rem;
+ color:#333333;
+ line-height:1.2;
+}
+h2 {
+  line-height: 1.25;
+  font-size: 3.5rem;
+}
+p {
+ margin: 0 0 3.6rem;
+}
+
+
+h5, .h5, blockquote {
+
+    font-size: 1.8rem;
 }

@@ -42,6 +42,7 @@ add_action( 'wp_enqueue_scripts', function() {
 	wp_enqueue_style( 'wordpress-gwinnett-screen', asset( 'css/screen.css' ), null, null );
 	
 	wp_enqueue_style( 'wpb-google-fonts', 'http://fonts.googleapis.com/css?family=Domine:300italic,400italic,700italic,400,700,300', false ); 
+	wp_enqueue_style( 'wpb-google-fonts1', 'http://fonts.googleapis.com/css?family=Josefin+Sans:300italic,400italic,700italic,400,600,700', false ); 
 
 
 } );
