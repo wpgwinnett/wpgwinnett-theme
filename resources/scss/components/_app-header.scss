@@ -72,4 +72,12 @@
 	text-decoration:none;
 	font-size: 1.1rem;
 	line-height:1;
+	font-family:'Josefin Sans';
+	font-weight:600;
+	padding:16px 14px 13px;
+	text-transform: uppercase;
 }
+
+.wp-custom-header {
+  grid-column: 2 / 4;
+ }
