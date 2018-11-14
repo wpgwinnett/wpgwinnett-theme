@@ -1,3 +1,4 @@
+<?php Hybrid\View\display( 'header', 'pageHeader' ) ?>
 <div class="app-content">
 
 	<main id="main" class="app-main">
@@ -16,6 +17,6 @@
 
 	</main>
 
-	<?php Hybrid\View\display( 'sidebar', 'primary', [ 'sidebar' => 'primary' ] ) ?>
+	
 
 </div>
