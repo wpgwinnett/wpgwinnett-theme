@@ -24,9 +24,27 @@
 
 	// Entry title.
 	&__title {}
+	
+	// Entry centered 
+	&__centered{
+	    text-align: center;
+
+	}
+	
+	// Entry block centered 
+	
+	&__block-centered{
+	   margin: 0 auto;
+	   width:40%;
+	 }
 
 	// Full entry content.
 	&__content {}
+	
+	// body of entry
+	&__body{
+		margin-top:8em;
+	}
 
 	// Summary/Excerpt.
 	&__summary {}

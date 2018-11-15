@@ -35,6 +35,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.9.6', '<' ) || version_compare(
 require_once( get_parent_theme_file_path( 'app/bootstrap-autoload.php' ) );
 require_once( get_parent_theme_file_path( 'app/bootstrap-app.php'      ) );
 
+
 // Register the single event page
 add_action( 'hybrid/templates/register', function( $templates ) {
 
@@ -54,7 +55,7 @@ function tribe_filter_template_paths ( $file, $template ) {
 		
 	 /*  this is the file path for when you are on your local server */
 	
-	$custom_file_path =  get_template_directory() . "\\resources\\views\\content\\events\\" . $template;
+	$custom_file_path =  get_template_directory() . "/resources/views/content/events/" . $template;
 		 // file doesn't exist in custom path, go with the default option
 		 if ( !file_exists($custom_file_path) ) return $file;
 		 // file exists in custom path, let's use it
@@ -62,4 +63,19 @@ function tribe_filter_template_paths ( $file, $template ) {
  }
 // tribe_events_template hook is in plugins/the-events-calendar/src/Tribe/Templates.php	
  add_filter( 'tribe_events_template', 'tribe_filter_template_paths', 10, 2 );
+
+add_action( 'hybrid/templates/register', function( $templates ) {
+// this is how you add templates for the Mythic theme 
+// this is not used for the calendar 
+	$templates->add(
+		'content/events/events-home.php',
+		[
+			'label'      => __( 'Events Home' ),
+			'post_types' => [ 'page', 'another type' ]
+		]
+	);
+	
+	
+	
+} );
 
