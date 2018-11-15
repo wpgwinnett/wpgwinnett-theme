@@ -15,6 +15,7 @@
 			<?php Hybrid\View\display( 'nav/pagination', 'posts' ) ?>
 
 		<?php endif ?>
+		
 
 	</main>
 
