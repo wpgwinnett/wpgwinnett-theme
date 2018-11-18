@@ -24,3 +24,20 @@
 	box-shadow: 0 30px 50px 0 rgba(1,1,1,.15);
 	
 }
+
+
+ @media only screen and (max-width: 400px) {
+    .app-main{
+	  box-shadow:none;
+	  width:100%;
+	  
+	 }
+	 .app-main:first-child{
+	   position:static;
+	   
+	 }
+	 
+	 
+ 
+ 
+ }
