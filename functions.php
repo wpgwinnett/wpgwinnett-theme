@@ -36,6 +36,8 @@ require_once( get_parent_theme_file_path( 'app/bootstrap-autoload.php' ) );
 require_once( get_parent_theme_file_path( 'app/bootstrap-app.php'      ) );
 
 
+
+
 add_action( 'hybrid/templates/register', function( $templates ) {
 // this is how you add templates for the Mythic theme 
 // this is not used for the calendar 
@@ -50,3 +52,49 @@ add_action( 'hybrid/templates/register', function( $templates ) {
 	
 	
 } );
+
+
+
+
+/*  tribe_filter_template_paths 
+ *
+ *
+ *  Tells the tribe calendar where to look for the template we want to use 
+ *
+ *  If you use this on your local machine, you have to alter the custom path
+ *
+ */
+function tribe_filter_template_paths ( $file, $template ) {
+ /*  This is the file path for when we go on the server 
+ */
+   $custom_file_path =  ABSPATH . 'wp-content/themes/wpgwinnett-theme/resources/views/content/events/' . $template;;
+   
+  /*  this is the file path for when you are on your local server */
+ 
+ $custom_file_path =  realpath(dirname(__FILE__)) . "\\resources\\views\\content\\events\\" . $template;
+    // file doesn't exist in custom path, go with the default option
+    if ( !file_exists($custom_file_path) ) return $file;
+    // file exists in custom path, let's use it
+    return $custom_file_path;
+}
+ 
+add_filter( 'tribe_events_template', 'tribe_filter_template_paths', 10, 2 );
+/* tribeEventsTitle 
+ *
+ *  Displays the word "Calendar" on the Tribe Events calendar page 
+ * 
+ *  otherwise it would display the title of the first event 
+ *
+ */
+ 
+ 
+function tribeEventsTitle( $html ){
+	
+   global $post;
+   if ($post->post_type === "tribe_events") {
+      $title = "<h1 class='entry__title'>Calendar</h1>";
+   }else return $html;
+   return $title;
+}
+add_filter('hybrid/post/title', 'tribeEventsTitle');
+
