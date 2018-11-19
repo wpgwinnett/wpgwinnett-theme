@@ -10,9 +10,14 @@
 
 	// Type of entry/post.
 	&--type-post {}
+			
+	&--type-page, &__wrapper {
+		max-width: 720px;
 
-	&--type-page {}
-
+			margin: 0 auto 12rem;
+	
+	}
+    
 	// Sticky posts.
 	&.sticky {}
 
@@ -23,21 +28,20 @@
 	&__header {}
 
 	// Entry title.
-	&__title {}
-	
-	// Entry centered 
-	&__centered{
-	    text-align: center;
 
+	&__title {
+		font-size:6.4rem;
+		word-wrap: breakword;
+		color:#333333;
 	}
+	
 	
 	// Entry block centered 
 	
 	&__block-centered{
 	   margin: 0 auto;
-	   width:40%;
+	   width:60%;
 	 }
-
 	// Full entry content.
 	&__content {}
 	
