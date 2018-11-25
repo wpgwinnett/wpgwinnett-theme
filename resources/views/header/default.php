@@ -14,6 +14,9 @@
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content' ) ?></a>
 
 		<?php Hybrid\View\display( 'nav/menu', 'primary', [ 'location' => 'primary' ] ) ?>
+		
+		<div id="toggle"><i class= "fas fa-bars" ></i>
+		</div>
 	
 		<div class="app-header__branding">
 			<?php the_custom_logo() ?>
