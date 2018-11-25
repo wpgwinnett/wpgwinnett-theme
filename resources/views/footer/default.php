@@ -18,7 +18,21 @@
 	</footer>
 
 </div><!-- .app -->
+<!--  popout menu for responsive design -->
 
+	<section id="popout">
+		<div id="popout__header">
+				   
+			<?php the_custom_header_markup() ?>
+			<i class= "fas fa-times"  ></i>
+		</div>
+					
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+					
+					
+		</section>	
+<!-- overlay for behind popup menu -->		
+<div class="overlay"> </div> 
 <?php wp_footer() ?>
 </body>
 </html>

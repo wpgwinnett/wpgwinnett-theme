@@ -23,3 +23,93 @@
 	// Item link.
 	&__link {}
 }
+//  Slide in Menu for responsive design
+
+@media screen and (min-width: 961px) { 
+#toggle,#popout {
+	display:none;
+}
+ 
+} 
+ 
+@media screen and (max-width: 960px) { 
+
+
+	.overlay{
+		background:rgba(0,0,0,.6);
+		visibility:hidden;
+		width:100%;
+		height:100%;
+		z-index:9998;
+		display:block;
+		position:fixed;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		transition: opacity .25s ease-in-out;
+	}
+
+
+	#popout {
+		position: fixed;
+		height: 100%;
+		width: 384px;
+		z-index: 9999;
+		background-color:#ffffff;
+		color: #000000;
+		top: 0px;
+		overflow:auto;
+	
+		.wp-custom-header {grid-area:logo;}
+		
+		&__header {
+	
+			width:100%;
+			height:100px;
+			background-color:#c62641;
+			display:grid;
+			grid-template-rows: repeat(4,10px);
+			grid-template-columns: repeat(20, 5x);
+		}
+	
+		.wp-custom-header {
+			grid-column: 2/8;
+			grid-row:3;
+
+		}
+		.fa-times{
+			font-size:1.5rem; 
+			line-height: 1.5;
+			visibility:visible;
+			grid-column: 6;
+			grid-row:4;
+			aria-hidden:true;
+			display:block;
+			vertical-align:middle;
+		
+		}
+	
+	}
+
+ 
+ 
+	.nav-menu li { 
+		border-bottom:1px solid #eee; 
+		padding:20px;
+		padding-left:0;
+		width:100%;
+		list-style-type: none;
+	}
+ 
+	.nav-menu li:hover { 
+		color:#ff0000;
+	}
+ 
+	.nav-menu li a { 
+		color:#444444;
+		text-decoration:none;
+		width:100%;
+
+	}
+} 
