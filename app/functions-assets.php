@@ -40,6 +40,8 @@ add_action( 'wp_enqueue_scripts', function() {
 
 	// Enqueue theme styles.
 	wp_enqueue_style( 'wordpress-gwinnett-screen', asset( 'css/screen.css' ), null, null );
+	
+	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css', array(), '4.5.0' );
 
 } );
 
