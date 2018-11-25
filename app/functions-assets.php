@@ -40,6 +40,8 @@ add_action( 'wp_enqueue_scripts', function() {
 
 	// Enqueue theme styles.
 	wp_enqueue_style( 'wordpress-gwinnett-screen', asset( 'css/screen.css' ), null, null );
+	
+	wp_enqueue_script( 'wpb_slidepanel', get_template_directory_uri() . '/resources/js/panel.js', array('jquery'), '20160909', true );
 
 } );
 
