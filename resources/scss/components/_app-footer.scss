@@ -13,6 +13,8 @@
 		 flex-direction: column;
 		 text-align:center;
 		 color:#aaaaaa;
+		 margin-bottom:8rem;
+		 font-size:1.4rem;
 	}
 	&__credit {}
 	
@@ -60,4 +62,78 @@
  }
 #menu__wpg-footer li:last-child::after{
   content:'';
+}
+
+
+/* responsive design */
+
+ @media only screen and (max-width: 1350px) {
+ 
+ .app-footer {
+		&__container {
+			padding-bottom: 8rem;
+			padding-left:50px;
+			padding-right:50px;
+			margin-bottom:0;
+		}
+		&__wp-custom-logo {
+			margin-top: 2rem;
+			height: 50px;
+			margin-bottom: 10px;
+		}
+	}
+ 
+ 
+ }
+
+@media only screen and (max-width: 850px) {
+
+	.app-footer {
+		&__container {
+			
+			font-size: 1.2rem !important;
+			padding-left:50px;
+			padding-right:50px;
+			background-color:none;
+			
+		}
+		&__wp-custom-logo {
+			margin-top: 2rem;
+			height: 45px;
+			margin-bottom: 10px;
+		}
+	}
+	
+
+}
+
+@media only screen and (max-width: 680px) {
+	.app-footer {
+		&__container {
+			padding: 0 20% 40px;
+			margin-top: 2rem;
+			background-color:#f8f8f8;
+			padding-bottom: 6rem;
+			
+		}
+	}
+
+
+
+}
+@media only screen and (max-width: 500px) {
+	.app-footer {
+		&__container {
+			padding: 0 5%;
+			margin-bottom:0;
+			background:#f8f8f8;
+		}
+	
+		&__wp-custom-logo {
+			margin-bottom:1em;
+
+		
+		}
+	}
+	
 }
