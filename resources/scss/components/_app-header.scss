@@ -11,10 +11,14 @@
 
 .app-header {
 	
+ 		
+		
+		  
 	background-color:#c62641;
 	left:0;
 	top:0;
-	position:fixed;
+	/*position:fixed;*/
+	position:absolute;
 	height:250px;
 	width:100%;
 	display:grid;
@@ -43,6 +47,29 @@
 	
 	
 }
+
+.app-header__sticky{
+
+	top:0;
+	left:0;
+	height:125px;
+	 visibility:hidden;
+	 
+ 
+  opacity:0;
+}
+
+.app-header.in-view{
+  opacity:1;
+  visibility:visible;
+ 		 transition-duration: 1s;
+    transition-timing-function: linear;
+  transition-property:all;
+  position:fixed;
+}
+
+
+
 /* header menu */
 .fa-bars, #toggle{
   visibility:hidden;
@@ -84,7 +111,7 @@
 
  }
  
- @media only screen and (max-width: 1300px) {
+ @media only screen and (max-width: 1350px) {
 	.app-header{
 		grid-template-rows: repeat(10,40px);
 		grid-template-columns: repeat(32, 25px);
@@ -198,4 +225,5 @@
  
 	 
 } 
+
 

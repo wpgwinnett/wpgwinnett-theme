@@ -42,7 +42,7 @@ add_action( 'wp_enqueue_scripts', function() {
 	wp_enqueue_style( 'wordpress-gwinnett-screen', asset( 'css/screen.css' ), null, null );
 	
 	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css', array(), '4.5.0' );
-
+	wp_enqueue_script( 'wpb_scrolling', get_template_directory_uri() . '/resources/js/scrolling.js', array('jquery'), '20160909', true );
 } );
 
 /**
