@@ -9,32 +9,67 @@
 /// @link   https://wpgwinnett.com
 ////
 .app-main:first-child{
-	top: 99px;
+	top: 140px;
 	position:relative;
 	z-index: 900;
 	background-color: #ffffff;
+	
 }
 .app-main {
 	grid-area: content;
-	margin: 0 auto 15rem;
-	padding: 16rem 0 15rem;
+	margin: 0 auto 10rem;
+	padding: 10rem 0 9rem;
 	width: 95%;
 
 	max-width: 1170px;
 	box-shadow: 0 30px 50px 0 rgba(1,1,1,.15);
+	&__scrollclass
+	{
+	   position:static !important;
 	
+	}
 }
 
 
- @media only screen and (max-width: 400px) {
-    .app-main{
-	  box-shadow:none;
+ @media only screen and (max-width: 1350px) {
+ 
+	.app-main{
+	  	  width:93%;
+		margin:0 auto 10rem;
+		padding: 10rem 0 2rem;
+
+	}
+}
+
+ @media only screen and (max-width: 850px) {
+ 
+	.app-main{
+	  	  width:90%;
+			padding: 10rem 0 10rem;
+	
+	 
+	 }
+	
+ 
+ }
+ @media only screen and (max-width: 680px) {
+ 
+	.app-main{
+	   box-shadow:none;
 	  width:100%;
+	   padding: 0rem 10%;
 	  
 	 }
-	 .app-main:first-child{
-	   position:static;
-	   
+	 
+ 
+ }
+
+ @media only screen and (max-width: 500px) {
+    .app-main{
+	
+	  width:100%;
+		 padding: 0 ;
+		margin-bottom:0;
 	 }
 	 
 	 
