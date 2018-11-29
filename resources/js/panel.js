@@ -1,6 +1,7 @@
 (function($) {
-$('#toggle').click( 
+$('.fa-bars').click( 
     function() {
+		console.log('clicked');
         $('#popout').animate({ left: screen.width-384}, 'fast', function() {
 				$('.overlay').css('visibility', 'visible');
 				$('body').css('overflow-y', 'hidden');
@@ -36,9 +37,14 @@ $('#popout .fa-times').click(
 (function($){
 	
 	$( document ).ready(function() {
-		console.log('screen width is ' + screen.width);
+		
 		$('#popout').css('left', screen.width + 500);
 		
 		
 	});
 })(jQuery);
+
+
+
+
+
