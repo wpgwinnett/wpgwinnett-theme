@@ -10,3 +10,46 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  wpgwinnett-twentynineteen
 */
+
+.entry-footer span.byline, .entry-footer span.posted-on { display: none;}
+/*div.entry-content{position:relative;}*/
+
+@media only screen and (min-width: 768px) {
+    .site-header.featured-image {
+        min-height: 75vh !important;
+        margin-bottom: 1rem;
+    }
+}
+
+.home .site-header.featured-image .entry-title {
+    margin-bottom: 5rem;
+}
+
+.entry-content .home-join-button{
+    position:absolute;
+    display: inline-block;
+    top:520px;
+    z-index:5;
+}
+
+@media only screen and (min-width: 768px) {
+    .entry-content .home-join-button{
+        position:absolute;
+        display: inline-block;
+        top:520px;
+        z-index:5;
+    }
+}
+
+@media only screen and (min-width: 1168px) {
+    .entry-content .home-join-button{
+        position:absolute;
+        display: inline-block;
+        top:520px;
+        z-index:5;
+    }
+}
+
+#login-designer-background {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.85);
+}
