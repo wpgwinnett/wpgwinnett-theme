@@ -14,3 +14,11 @@ function wpgwinnett_enqueue_styles() {
 	);
 
 }
+
+//TODO this needs to go in a custom plugin
+add_filter( 'tribe_events_list_show_ical_link', 'wpgwinnett_tribe_events_list_show_ical_link' );
+
+function wpgwinnett_tribe_events_list_show_ical_link() {
+
+	return false;
+}
