@@ -5,51 +5,601 @@
  Author:       WordPress Gwinnett members
  Author URI:   https://wpgwinnett.com
  Template:     twentynineteen
- Version:      2.0.0
+ Version:      3.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  wpgwinnett-twentynineteen
 */
 
+/*
+THANK YOU to WordCamp Birmingham and WordCamp Lisboa
+ */
 .entry-footer span.byline, .entry-footer span.posted-on { display: none;}
-/*div.entry-content{position:relative;}*/
 
-@media only screen and (min-width: 768px) {
-    .site-header.featured-image {
-        min-height: 75vh !important;
-        margin-bottom: 1rem;
-    }
-}
-
-.home .site-header.featured-image .entry-title {
-    margin-bottom: 5rem;
-}
-
-.entry-content .home-join-button{
-    position:absolute;
-    display: inline-block;
-    top:520px;
-    z-index:5;
-}
-
-@media only screen and (min-width: 768px) {
-    .entry-content .home-join-button{
-        position:absolute;
-        display: inline-block;
-        top:520px;
-        z-index:5;
-    }
-}
-
-@media only screen and (min-width: 1168px) {
-    .entry-content .home-join-button{
-        position:absolute;
-        display: inline-block;
-        top:520px;
-        z-index:5;
-    }
-}
 
 #login-designer-background {
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.85);
+}
+
+/* Custom CSS from 2019.lisboa.wordcamp.org */
+/* CÓDIGO JÁ NO SITE */
+.site * {
+    font-family: 'Fira Sans', -apple-system, sans-serif !important;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: "Cabin", sans-serif;
+}
+
+table td, table th {
+    word-break: break-word;
+}
+
+.image-filters-enabled .site-header.featured-image:after {
+    background: #92bace;
+    opacity: .2;
+}
+
+.image-filters-enabled .site-header.featured-image .site-featured-image:after {
+    background: #92bace;
+    opacity: .8;
+}
+
+.image-filters-enabled .site-header.featured-image .site-featured-image:after {
+    background: #92bace;
+    opacity: 1;
+}
+
+.image-filters-enabled .entry .post-thumbnail:after {
+    background: #92bace;
+}
+
+button {
+    background: #ffc81e;
+    color: #000000;
+}
+
+button:hover {
+    background: #000000;
+    color: #ffc81e;
+}
+
+.entry .entry-content > *, .entry .entry-summary > * {
+    max-width: 100% !important;
+}
+
+/* ADICIONADO AGS 20190402 */
+/* ATENÇÃO: Esconde Título e Descrição */
+.site-title, .site-description {
+    display: none !important;
+}
+
+.site-header {
+    padding: 0;
+}
+
+.entry-header {
+    padding: 1em;
+    padding-top: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+    .entry-header {
+        padding: 1em;
+    }
+}
+
+/* CORES (para referência) */
+.amarelo {
+    background-color: #ffc81e;
+}
+
+.amarelo-claro {
+    background-color: #fff0c1;
+}
+
+.grafite {
+    background-color: #212c36;
+}
+
+.fantasma {
+    background-color: #F6F7FB;
+}
+
+/* LOGO */
+.site-logo .custom-logo-link:hover, .site-logo .custom-logo-link:active, .site-logo .custom-logo-link:focus,
+.site-header.featured-image .custom-logo-link:hover, .site-header.featured-image .custom-logo-link:active, .site-header.featured-image .custom-logo-link:focus {
+    box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+    .site-logo {
+        top: -23px;
+    }
+}
+
+.site-header.featured-image .custom-logo-link {
+    background: none;
+}
+
+/* NAVEGAÇÃO */
+.site-branding-container {
+    position: fixed;
+    z-index: 100;
+    background: #212c36;
+    width: 100%;
+    padding: 1rem;
+}
+
+.main-navigation {
+    font-size: .85em;
+}
+
+.main-navigation .main-menu > li > a {
+    margin-right: .75rem;
+}
+
+.main-navigation .main-menu > li,
+.main-navigation .main-menu > li > a,
+.site-header.featured-image .main-navigation .main-menu > li > a {
+    color: #fff0c1;
+}
+
+.main-navigation .main-menu > li > a:hover,
+.main-navigation .main-menu > li > a:hover + svg,
+.main-navigation .main-menu > li:hover,
+.site-header.featured-image .main-navigation .main-menu > li > a:hover {
+    color: #ffc81e;
+    opacity: 1;
+}
+
+.main-navigation .sub-menu {
+    background-color: #212c36;
+}
+
+.site-header:before {
+    content: none;
+}
+
+/* HERO - FRONTPAGE Baseado no site de Hamilton
+.home-topo-mobile {
+	margin-top: 130px !important;
+}
+
+.home-topo-desktop {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.home-topo-mobile {
+		display: none;
+	}
+
+	.home-topo-desktop {
+		display: block;
+	}
+}
+
+.cta-principal .wp-block-column .wp-block-image img {
+	margin: auto;
+}
+
+/* FEATURED IMAGE para reduzir altura ocupada */
+.site-header.featured-image .site-featured-image .post-thumbnail img {
+    height: 50%;
+}
+
+.site-header.featured-image .site-branding-container::after, .site-header.featured-image .site-featured-image::before, .site-header.featured-image .site-featured-image::after, .site-header.featured-image::after {
+    height: 100%;
+}
+
+.site-header.featured-image .site-featured-image .post-thumbnail img {
+    min-height: 100%;
+}
+
+.site-header.featured-image {
+    min-height: 50vh !important;
+}
+
+/* FOOTER */
+/*#colophon {
+	background-color: #FFC81E;
+}*/
+
+#colophon .widget-area {
+    margin: 0;
+    padding: 2em;
+    background-color: #F6F7FB;
+}
+
+@media screen and (min-width: 1168px) {
+    #colophon .widget-column .widget {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+#colophon .widget_blog_subscription form #subscribe-email {
+    max-width: 600px !important;
+}
+
+/* SPONSORS WIDGET */
+.widget .sponsor-level {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.wcb_widget_sponsors .sponsor-logo img {
+    max-height: 150px;
+}
+
+.wcb_widget_sponsors .gold .sponsor-logo img {
+    max-height: 100px;
+}
+
+.wcb_widget_sponsors .silver .sponsor-logo img {
+    max-height: 75px;
+}
+
+.wcb_widget_sponsors .bronze .sponsor-logo img {
+    max-height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .wcb_widget_sponsors .sponsor-logo {
+        width: 28%;
+        margin-right: 2%;
+        margin-left: 2%;
+        display: inline-block !important;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .wcb_widget_sponsors .sponsor-logo img {
+        width: auto;
+        max-height: 150px !important;
+    }
+
+    .wcb_widget_sponsors .gold .sponsor-logo {
+        width: 22%;
+    }
+
+    .wcb_widget_sponsors .silver .sponsor-logo {
+        width: 18%;
+    }
+
+    .wcb_widget_sponsors .bronze .sponsor-logo {
+        width: 16%;
+    }
+}
+
+/* SPONSORS - Single page */
+body.single-wcb_sponsor #content {
+    margin-top: calc(5 * 1rem);
+}
+
+@media screen and (min-width: 768px) {
+    body.single-wcb_sponsor #content {
+        margin-top: 0;
+    }
+}
+
+body.single-wcb_sponsor .site-featured-image .post-thumbnail,
+body.single-wcb_sponsor .entry-header {
+    display: none;
+}
+
+body.single-wcb_sponsor .site-header.featured-image {
+    min-height: 0 !important;
+}
+
+body.single-wcb_sponsor.image-filters-enabled .site-header.featured-image:after,
+body.single-wcb_sponsor.image-filters-enabled .site-header.featured-image .site-featured-image:after,
+body.single-wcb_sponsor.image-filters-enabled .site-header.featured-image .site-featured-image:before {
+    background-color: transparent !important;
+    background: none !important;
+}
+
+body.single-wcb_sponsor .site-header.featured-image {
+    text-shadow: none;
+}
+
+body.single-wcb_sponsor .site-header.featured-image .entry-title,
+body.single-wcb_sponsor .single-wcb_sponsor,
+body.single-wcb_sponsor .site-header.featured-image .entry-meta {
+    color: #111 !important;
+}
+
+body.single-wcb_sponsor .site-header.featured-image .social-navigation svg,
+body.single-wcb_sponsor .site-header.featured-image .site-featured-image svg {
+    filter: none;
+}
+
+/* RETIRADO E EDITADO DO CÓDIGO DO HVILELA 20190402 */
+/* Blocks */
+.block__page-header {
+    background-color: red;
+}
+
+body #primary .wc-button.is-style-outline a,
+form button {
+    transition: background-color .6s cubic-bezier(0.165,0.84,0.44,1), color .6s cubic-bezier(0.165,0.84,0.44,1);
+    border: 0;
+    border-radius: 50px !important;
+    padding: 12px 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 1;
+    background-color: #FFC81E;
+    color: #000000 !important;
+}
+
+body #primary .wc-button.is-style-outline a::before {
+    display: none;
+}
+
+body #primary .wc-button.is-style-outline a:hover,
+form button:hover {
+    color: white !important;
+    background-color: #000000;
+}
+
+/* Body */
+body .site {
+    padding-top: 0;
+    overflow: hidden;
+}
+
+body .site .site-main .entry-content > * {
+    max-width: 100%;
+}
+
+body .site .site-main .entry-content .wp-block-columns {
+    max-width: 100%;
+}
+
+/* SINGLE */
+.entry .entry-meta {
+    display: none;
+}
+
+.author-bio {
+    display: none;
+}
+
+/********** Custom CSS from Nathan **********/
+/* makes home page full width */
+.page-id-4 .entry-content {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 !important;
+}
+
+.entry-content {
+    padding-top: 100px !important;
+}
+
+/* Hero Image Test */
+.wp-block-image.home-hero2 {
+    background-image: url('wp-content/uploads/wordpress-gwinnett-rps-18-10-11.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 160px 0;
+}
+
+.home-hero2 img {
+    max-width: 300px !important;
+    height: auto !important;
+    margin: 0 auto;
+}
+
+.site-logo .custom-logo-link {
+    border-radius: 0 !important;
+}
+
+/* Identity Block */
+.home-identity {
+    margin: -32px 0 0 !important;
+    /*background: #92BACE;*/
+    /*padding-bottom: 50px;
+    padding-top: 1px;*/
+    padding: 1px 60px 50px 60px;
+}
+
+h2.home-identity:before {
+    background: none !important;
+}
+
+/* Column Fixes */
+.wp-block-columns.has-3-columns .wp-block-column {
+    width: 30%;
+    display: inline-block;
+}
+
+/* Home Icons */
+.icon-block {
+    margin: 0 auto;
+    display: block;
+}
+
+.home-icon {
+    text-align: center;
+    padding: 50px;
+}
+
+.home-icon a {
+    text-decoration: none !important;
+    color: #111111;
+}
+
+.home-icon img {
+    margin: 0 auto;
+    max-width: 150px;
+    height: auto;
+    transition: all .15s linear;
+    padding-bottom: 10px;
+}
+
+.home-icon a:hover img {
+    transform: scale(1.15);
+    transition: all .15s linear;
+}
+
+.home-icon-title1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+    .wp-block-columns.has-3-columns .wp-block-column {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.icon-block {
+    background: #e3eff4;
+    margin-top: 0 !important;
+}
+
+#post-4 .entry-content {
+    margin-top: 0;
+}
+
+.home-news {
+    text-align: center;
+}
+
+.main-navigation .main-menu > li > a {
+    margin-right: 1.25rem;
+}
+
+.main-navigation .sub-menu {
+    padding-top: 22px;
+}
+
+.site-footer {
+    background: #efefef;
+}
+
+.site-header.featured-image {
+    margin-bottom: 0 !important;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.entry-content {
+    padding-top: 0 !important;
+}
+
+/*.home .entry-header {
+	display: none;
+}*/
+
+li.menu-tickets a {
+    background: #0A9DE2;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-left: 25px;
+    color: #fff !important;
+    transition: all .15s linear;
+    text-decoration: none !important;
+}
+
+li.menu-tickets a:hover {
+    background: #4fc7ff;
+    transition: all .15s linear;
+}
+
+.site-header.featured-image .site-featured-image .post-thumbnail img {
+    transform: translateY(10%);
+}
+
+.home-welcome-message-container {
+    background: #92BACE;
+    text-align: center;
+    margin: 0px auto;
+    position: relative;
+}
+
+.home-welcome-message-group {
+    max-width: 900px;
+    position: relative;
+    margin: 0px auto;
+}
+
+/*body.home header.site-header .site-featured-image:after {
+	display:none;
+}*/
+
+body.single-tribe_events .tribe-events-single-event-title {
+    text-align: center;
+}
+
+body.single-tribe_events .tec-event-definition {
+    text-align: center;
+}
+
+body.single-tribe_events .tec-event-definition .tribe-block__venue, body.single-tribe_events .tec-event-definition .tribe-block__venue__name, body.single-tribe_events .tec-event-definition .tribe-block__events-link {
+    justify-content:center;
+}
+
+body.single-tribe_events .tec-event-definition .tribe-events-schedule__date::after {
+    content: "\A";
+    white-space:pre-wrap;
+}
+
+/*body.single-tribe_events .tec-event-definition .tribe-block__venue .tribe-address br {
+    display: inline;
+    content: ' ';
+    clear:none;
+}*/
+body.single-tribe_events .tec-event-definition .tribe-block__venue__name {line-height:1;}
+body.single-tribe_events .tec-event-definition .tribe-block__venue__name h3 {
+    font-size:21px;
+    margin-bottom:0px;
+}
+
+body.single-tribe_events .tec-event-definition .tribe-block__venue__address {font-size: 0.7rem;
+}
+
+body.single-tribe_events .tec-event-definition .tribe-country-name,
+body.single-tribe_events .tec-event-definition .tribe-block__venue__phone,
+body.single-tribe_events .tec-event-definition .tribe-block__venue__website,
+body.single-tribe_events .tribe-block__rsvp__availability,
+body.events-archive .tribe-events-venue-details,
+body.events-archive .tribe-events-event-cost,
+body.tribe-events-style-theme h2:before,
+body.tribe-events-style-theme h1:before
+{
+    display: none;
+}
+
+body.events-archive .entry .entry-content .entry-summary {
+    margin-top:0px;
+}
+
+body.tribe-events-style-theme #primary .entry-content {padding-top:60px !important;}
+
+.tribe-events-loop .tribe-event-schedule-details {
+    font-size: 0.9rem;
+}
+
+.tribe-events-list-widget-events h4 {
+    margin-bottom: 0;
 }
