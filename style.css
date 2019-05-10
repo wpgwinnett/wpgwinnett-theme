@@ -238,24 +238,24 @@ button:hover {
     text-align: center;
 }
 
-.wcb_widget_sponsors .sponsor-logo img {
+.wcb_widget_sponsors .wpgwinnett-sponsor-logo img {
     max-height: 150px;
 }
 
-.wcb_widget_sponsors .gold .sponsor-logo img {
+.wcb_widget_sponsors .gold .wpgwinnett-sponsor-logo img {
     max-height: 100px;
 }
 
-.wcb_widget_sponsors .silver .sponsor-logo img {
+.wcb_widget_sponsors .silver .wpgwinnett-sponsor-logo img {
     max-height: 75px;
 }
 
-.wcb_widget_sponsors .bronze .sponsor-logo img {
+.wcb_widget_sponsors .bronze .wpgwinnett-sponsor-logo img {
     max-height: 50px;
 }
 
 @media screen and (min-width: 768px) {
-    .wcb_widget_sponsors .sponsor-logo {
+    .wcb_widget_sponsors .wpgwinnett-sponsor-logo {
         width: 28%;
         margin-right: 2%;
         margin-left: 2%;
@@ -264,20 +264,20 @@ button:hover {
         margin-bottom: 1em;
     }
 
-    .wcb_widget_sponsors .sponsor-logo img {
+    .wcb_widget_sponsors .wpgwinnett-sponsor-logo img {
         width: auto;
         max-height: 150px !important;
     }
 
-    .wcb_widget_sponsors .gold .sponsor-logo {
+    .wcb_widget_sponsors .gold .wpgwinnett-sponsor-logo {
         width: 22%;
     }
 
-    .wcb_widget_sponsors .silver .sponsor-logo {
+    .wcb_widget_sponsors .silver .wpgwinnett-sponsor-logo {
         width: 18%;
     }
 
-    .wcb_widget_sponsors .bronze .sponsor-logo {
+    .wcb_widget_sponsors .bronze .wpgwinnett-sponsor-logo {
         width: 16%;
     }
 }
